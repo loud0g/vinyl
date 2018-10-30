@@ -1,0 +1,17 @@
+{
+  "name": "record-catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Matt Carter <cartemj2@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bower": "^1.8.4",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
