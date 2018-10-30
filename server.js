@@ -2,6 +2,7 @@ var path = require('path');
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
+var collection = require('./routes/collection');
 
 var port = process.env.PORT || 80;
 
@@ -11,6 +12,7 @@ if (app.get('env') === 'development') {
 	port = 3000;
 }
 
+app.use('/collection', collection);
 app.use(express.static(path.join(__dirname,'public')));
 
 // catch 404 and forward to error handler
